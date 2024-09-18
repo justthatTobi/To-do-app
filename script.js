@@ -6,8 +6,8 @@ function addTask() {
         const taskItem = document.createElement('li');
         taskItem.innerHTML = `
             <span class="task-text">${taskInput.value}</span> 
-            <button class="edit-button" onclick="editTask(this)"></button>
-            <button onclick="deleteTask(this)"></button>
+            <button class="edit-button" onclick="editTask(this)"><i class="fas fa-edit"></i></button>
+            <button onclick="deleteTask(this)"><i class="fa fa-trash"></i></button>
         `;
         taskList.appendChild(taskItem);
         taskInput.value = '';
